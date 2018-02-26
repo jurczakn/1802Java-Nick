@@ -1,2 +1,3 @@
 Hello this is my example.
 Made change online
+This will be a merge conflict
