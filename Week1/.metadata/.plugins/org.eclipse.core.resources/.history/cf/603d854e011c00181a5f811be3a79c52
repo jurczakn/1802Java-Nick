@@ -1,0 +1,18 @@
+package com.revature.pojo;
+
+public class Anything {
+	
+	private String theThing;
+	
+	public String getTheThing(){
+		
+		return this.theThing;
+		
+	}
+	
+	public void setTheThing(String theThing){
+		
+		this.theThing = theThing;
+	}
+
+}

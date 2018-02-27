@@ -1,0 +1,22 @@
+package com.revature;
+
+public class HelloWorld {
+	
+	static public void main(String pirateSounds[]){
+		
+		System.out.println("Hello World");
+		
+	}
+	
+	public static void Main(String[] args){
+		
+		
+	}
+	
+	public static void main(String[] args, String[] args2){
+		
+		
+		
+	}
+
+}

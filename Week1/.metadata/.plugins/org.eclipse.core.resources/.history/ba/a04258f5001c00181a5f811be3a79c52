@@ -1,0 +1,13 @@
+package com.revature.driver;
+
+public class Anything {
+	
+	private String theThing;
+	
+	public String getTheThing(){
+		
+		return this.theThing;
+		
+	}
+
+}

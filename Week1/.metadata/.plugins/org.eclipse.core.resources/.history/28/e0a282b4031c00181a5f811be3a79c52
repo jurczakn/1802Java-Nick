@@ -1,0 +1,26 @@
+package com.revature.pojo;
+
+public class Anything {
+	
+	public static int numberOfThings = 6;
+	
+	private String theThing;
+	
+	public static void changeNumberOfThings(int i){
+		
+		Anything.numberOfThings = i;
+		
+	}
+	
+	public String getTheThing(){
+		
+		return this.theThing;
+		
+	}
+	
+	public void setTheThing(String theThing){
+		
+		this.theThing = theThing;
+	}
+
+}

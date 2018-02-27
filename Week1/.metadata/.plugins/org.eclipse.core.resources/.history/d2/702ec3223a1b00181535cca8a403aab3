@@ -1,0 +1,31 @@
+package com.revature.driver;
+
+public class HelloWorld {
+	
+	static public void main(String[] args){
+		
+		String myString;
+		myString = "Welcome";
+		
+		int myInt = 5;
+		
+		System.out.println("Result " + count(3));
+		
+	}
+	
+	private static int count(int i){
+		
+		System.out.println("Value of i initially: " + i);
+		
+		while(i < 100){
+			
+			System.out.println("Inside count: " + i);
+			
+			i += 17;
+		}
+		
+		return i;
+		
+	}
+
+}

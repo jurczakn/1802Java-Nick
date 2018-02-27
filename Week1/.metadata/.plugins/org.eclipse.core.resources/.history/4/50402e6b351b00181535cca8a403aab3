@@ -1,0 +1,24 @@
+package com.revature.driver;
+
+public class HelloWorld {
+	
+	static public void main(String[] args){
+		
+		String myString = "Welcome";
+		
+		System.out.println("Hello World");
+		
+	}
+	
+	public static void Main(String[] args){
+		
+		
+	}
+	
+	public static void main(String args){
+		
+		
+		
+	}
+
+}
