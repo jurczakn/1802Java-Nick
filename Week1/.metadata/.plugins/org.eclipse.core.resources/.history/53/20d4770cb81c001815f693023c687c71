@@ -1,0 +1,45 @@
+package com.revature.driver;
+
+import java.util.Scanner;
+
+public class ScannerDriver {
+	
+	public static void main(String[] args){
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("Hello " + args[0]);
+		System.out.print("Please enter your username:");
+		
+		String username = scan.nextLine();
+		
+		System.out.print("Please enter your password:");
+		
+		String password = scan.nextLine();
+		
+		/*System.out.println("Username: " + username);
+		System.out.println("Password:" + password);*/
+		
+		String result;
+		
+		result = (login(username, password)) ? "successful login" : "invalid login";
+		
+	}
+	
+	public static boolean login(String username, String password){
+		
+		if("myUser".equals(username) && "psw".equals(password)){
+			
+			return true;
+			
+		}
+		
+		else {
+			
+			return false;
+			
+		}
+		
+	}
+
+}
