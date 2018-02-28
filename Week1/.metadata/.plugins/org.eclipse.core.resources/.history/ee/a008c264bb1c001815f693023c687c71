@@ -1,0 +1,9 @@
+package com.revature.driver;
+
+public class ReflectionDriver {
+	
+	String s = "class string";
+	
+	Class<String> stringClass = String.class;
+
+}

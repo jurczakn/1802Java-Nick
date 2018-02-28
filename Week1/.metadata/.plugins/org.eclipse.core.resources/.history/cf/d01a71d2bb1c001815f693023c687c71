@@ -1,0 +1,20 @@
+package com.revature.driver;
+
+import java.lang.reflect.Field;
+
+public class ReflectionDriver {
+
+	String s = "class string";
+
+	Class<String> string = String.class;
+
+	try
+	{
+		Field field = string.getDeclaredField("value");
+	}catch(
+	NoSuchFieldException e)
+	{
+		e.printStackTrace();
+	}
+}
+	
