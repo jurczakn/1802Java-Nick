@@ -1,0 +1,38 @@
+package com.revature;
+
+public class Overloading {
+
+	public static void main(String[] args) {
+
+		/*Wrapper classes are object version
+		 * of our primative types.
+		 * All primative types have a wrapper class.
+		 */
+		Integer i = new Integer(5);
+		Character c = new Character('c');
+		Double d = new Double(9.999999999);
+		Float f = new Float(0.0F);
+		Long l = new Long(99999999999999999L);
+		Boolean b = new Boolean(true);
+		Short s = new Short((short) 0);
+		Byte by = new Byte((byte)9);
+		
+		//autoBoxing
+		getInteger(6);
+		
+		//autoUnBoxing
+		getInt(i);
+		
+		
+		int in = 10;
+		
+		System.out.println(i + in);
+	}
+
+	public static void getInt(int i){}
+	
+	public static void getInts(int i[]){}
+	
+	public static void getInteger(Integer i){}
+	
+}
