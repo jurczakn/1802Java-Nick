@@ -1,0 +1,2 @@
+This is a simple text document writen in java
+This should be on the second line

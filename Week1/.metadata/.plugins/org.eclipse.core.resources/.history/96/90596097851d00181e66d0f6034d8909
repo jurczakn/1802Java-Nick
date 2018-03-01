@@ -1,0 +1,15 @@
+package com.revature.io;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class FileIO {
+
+	public static void main(String[] args) {
+		
+		FileWriter fw = new FileWriter("test1.txt");
+		BufferedWriter bw = new BufferedWriter(fw);
+
+	}
+
+}

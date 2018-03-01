@@ -1,0 +1,13 @@
+package com.revature.io;
+
+public class Serialize {
+
+	
+	
+	public static void main(String[] args) {
+		
+		Planets Pluto = new Planets(2, 9, "Pluto", 1048);
+		
+	}
+	
+}

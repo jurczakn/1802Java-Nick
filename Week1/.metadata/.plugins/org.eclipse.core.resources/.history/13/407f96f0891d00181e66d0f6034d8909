@@ -1,0 +1,31 @@
+package com.revature.io;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class Serialize {
+
+	
+	
+	public static void main(String[] args) {
+		
+		Planets pluto = new Planets(2, 9, "Pluto", 1048);
+		
+		try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("myPlanet.dat"))){
+			
+			oos.writeObject(pluto);
+			System.out.println("Done");
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+}

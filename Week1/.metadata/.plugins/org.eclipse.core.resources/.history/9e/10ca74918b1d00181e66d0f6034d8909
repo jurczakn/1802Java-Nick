@@ -1,0 +1,58 @@
+package com.revature.io;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileIO {
+
+	public static void main(String[] args) {
+		
+		FileWriter fw;
+		BufferedWriter bw = null;
+		try {
+			fw = new FileWriter("test1.txt");
+			bw = new BufferedWriter(fw);
+			bw.write("This is a simple text document writen in java");
+			bw.newLine();
+			bw.write("This should be on the second line");
+			System.out.println("Done!");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			
+			try {
+				if(bw != null)bw.flush();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			try {
+				if(bw != null) bw.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		
+		try(BufferedWriter bw2 = new BufferedWriter(new FileWriter("test2.txt", true))){
+			
+			bw2.write("This is my Second text document writen in java");
+			bw2.newLine();
+			bw2.write("This should be on the second line");
+			System.out.println("Done!");
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			
+			System.out.println("finally");
+			
+		}
+
+	}
+
+}

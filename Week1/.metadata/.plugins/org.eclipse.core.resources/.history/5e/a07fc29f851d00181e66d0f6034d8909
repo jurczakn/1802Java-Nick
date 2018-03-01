@@ -1,0 +1,24 @@
+package com.revature.io;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileIO {
+
+	public static void main(String[] args) {
+		
+		FileWriter fw;
+		try {
+			fw = new FileWriter("test1.txt");
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write("This is a simple text document writen in java");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+
+	}
+
+}

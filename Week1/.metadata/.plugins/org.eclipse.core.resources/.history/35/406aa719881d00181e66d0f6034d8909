@@ -1,0 +1,13 @@
+package com.revature.io;
+
+public class Planets {
+	
+	double mass;
+	
+	int position;
+	
+	String name;
+	
+	int population;
+
+}
