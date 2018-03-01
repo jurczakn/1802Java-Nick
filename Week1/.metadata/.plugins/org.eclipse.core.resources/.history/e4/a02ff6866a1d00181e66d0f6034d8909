@@ -1,0 +1,24 @@
+package com.revature;
+
+public class Temperature {
+	
+	public static void main(String[] args) {
+		//Temperature temp = new Temperature(45);
+		new Celcius();
+	}
+	
+	public int ferenheit;
+	
+	public Temperature(int f){
+		//this(); //refers to Temperature()
+		System.out.println("temp args constructor");
+		this.ferenheit = f;
+		
+	}
+	
+	/*public Temperature(){
+		super();//refers to Object()
+		System.out.println("temp noargs constructor");
+	}*/
+
+}

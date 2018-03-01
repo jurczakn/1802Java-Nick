@@ -1,0 +1,21 @@
+package com.revature;
+
+public class Temperature {
+	
+	public static void main(String[] args) {
+		Temperature temp = new Temperature();
+	}
+	
+	public int ferenheit;
+	
+	public Temperature(int f){
+		this();
+		this.ferenheit = f;
+		
+	}
+	
+	public Temperature(){
+		super();
+	}
+
+}

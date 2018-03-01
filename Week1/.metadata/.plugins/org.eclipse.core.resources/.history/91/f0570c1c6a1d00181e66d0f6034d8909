@@ -1,0 +1,14 @@
+package com.revature;
+
+public class Celcius extends Temperature {
+	
+	public Celcius(){
+		super(45);
+		//super(); //refers to Temperature()
+		System.out.println("Celcius no args constructor");
+		
+	}
+	
+	//public Celcius(int i){}
+
+}
