@@ -1,0 +1,19 @@
+package com.revature.driver;
+
+public class Calculator <T extends Number> {
+	
+	public static void main(String[] args) {
+		
+		Calculator<Integer> c = new Calculator<>();
+		
+	}
+	
+	public T add(T i, T j){
+		
+		Number ret = i.doubleValue() + j.doubleValue();
+		
+		return (T) ret;
+		
+	}
+
+}

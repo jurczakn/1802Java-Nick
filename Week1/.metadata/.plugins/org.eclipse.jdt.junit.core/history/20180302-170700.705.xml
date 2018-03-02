@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="LoggingUtilTest" project="Logging" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.revature.util.LoggingUtilTest" time="0.001">
+    <testcase name="test" classname="com.revature.util.LoggingUtilTest" time="0.001"/>
+    <testcase name="isATest" classname="com.revature.util.LoggingUtilTest" time="0.0"/>
+  </testsuite>
+</testrun>

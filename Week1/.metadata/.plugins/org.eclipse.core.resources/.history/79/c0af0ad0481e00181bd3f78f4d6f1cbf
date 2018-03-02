@@ -1,0 +1,21 @@
+package com.revature.driver;
+
+public class Calculator <T extends Number, G extends Number> {
+	
+	public static void main(String[] args) {
+		
+		Calculator<Integer> c = new Calculator<>();
+		
+		System.out.println(c.add(5, 7));
+		
+	}
+	
+	public T add(T i, T j){
+		
+		Number ret = i.doubleValue() + j.doubleValue();
+		
+		return (T) ret;
+		
+	}
+
+}

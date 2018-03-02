@@ -1,0 +1,18 @@
+package com.revature.thread;
+
+public class ThreadDriver {
+	public static void main(String[] args) {
+		
+		Thread t = new MyThread();
+		
+		t.start();
+		
+		for(int i = 0; i < 1000000000; i++){
+			
+			System.out.println("************** " + i + "times");
+			
+		}
+		
+	}
+
+}
