@@ -37,9 +37,6 @@ public class CompareDriver {
 		Collections.sort(coffeeMakers);
 		System.out.println("After sorting");
 		System.out.println(coffeeMakers);
-		System.out.println("After sorting with Comparitor");
-		Collections.sort(coffeeMakers, compCoff);
-		System.out.println(coffeeMakers);
 		
 	}
 

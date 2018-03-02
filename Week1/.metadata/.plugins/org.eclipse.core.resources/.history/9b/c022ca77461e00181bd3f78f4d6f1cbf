@@ -20,10 +20,6 @@ public class CompareDriver {
 		System.out.println(cm4 + " vs " + cm3 + ": " + cm4.compareTo(cm3));
 		System.out.println(cm4 + " vs " + cm5 + ": " + cm4.compareTo(cm5));
 		
-		CoffeeMakers.CompareCoffeeByTime compCoff = new CoffeeMakers.CompareCoffeeByTime();
-		
-		System.out.println(cm4 + " vs " + cm3 + ": " + compCoff.compare(cm4, cm3));
-		
 		List<CoffeeMakers> coffeeMakers = new ArrayList<>();
 		
 		coffeeMakers.add(cm1);
@@ -36,9 +32,6 @@ public class CompareDriver {
 		System.out.println(coffeeMakers);
 		Collections.sort(coffeeMakers);
 		System.out.println("After sorting");
-		System.out.println(coffeeMakers);
-		System.out.println("After sorting with Comparitor");
-		Collections.sort(coffeeMakers, compCoff);
 		System.out.println(coffeeMakers);
 		
 	}
