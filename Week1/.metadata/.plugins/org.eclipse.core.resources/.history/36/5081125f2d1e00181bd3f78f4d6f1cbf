@@ -1,0 +1,19 @@
+package com.revature.driver;
+
+public class CollectionDriver {
+
+	public static void main(String[] args) {
+		
+		String[] sarr = new String[]{"one", "two", "three"};
+		
+		System.out.println(sarr);
+		
+		/*for(String s : sarr){
+			
+			System.out.println(s);
+			
+		}*/
+
+	}
+
+}

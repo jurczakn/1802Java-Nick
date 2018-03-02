@@ -1,0 +1,36 @@
+package com.revature.driver;
+
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
+
+public class CollectionDriver {
+
+	public static void main(String[] args) {
+		
+		String[] sarr = new String[]{"one", "two", "three"};
+		
+		System.out.println(sarr);
+		
+		/*for(String s : sarr){
+			
+			System.out.println(s);
+			
+		}*/
+		
+		//sarr[3] = "four";  Cannot resize an array
+		
+		List l = new LinkedList<>();
+		
+		/*l.add("one");
+		l.add("two");
+		l.add("three");*/
+		
+		//      vvv--------utility class for working with Arrays
+		l.addAll(Arrays.asList(sarr));
+		
+		System.out.println(l);
+
+	}
+
+}

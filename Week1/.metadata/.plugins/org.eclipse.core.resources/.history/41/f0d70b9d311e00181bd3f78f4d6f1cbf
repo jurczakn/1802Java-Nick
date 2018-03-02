@@ -1,0 +1,17 @@
+package com.revature.driver;
+
+public class CoffeeMakers implements Comparable<CoffeeMakers>{
+
+	int capacity;
+	
+	double completionTime;
+	
+	String brand;
+	
+	@Override
+	public int compareTo(CoffeeMakers arg0) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

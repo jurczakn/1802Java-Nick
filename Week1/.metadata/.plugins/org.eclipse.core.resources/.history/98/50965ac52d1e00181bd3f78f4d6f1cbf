@@ -1,0 +1,26 @@
+package com.revature.driver;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class CollectionDriver {
+
+	public static void main(String[] args) {
+		
+		String[] sarr = new String[]{"one", "two", "three"};
+		
+		System.out.println(sarr);
+		
+		/*for(String s : sarr){
+			
+			System.out.println(s);
+			
+		}*/
+		
+		//sarr[3] = "four";  Cannot resize an array
+		
+		IOException io = new FileNotFoundException();
+
+	}
+
+}
