@@ -1,0 +1,39 @@
+package com.revature.dao;
+
+import java.util.List;
+
+import com.revature.pojo.FlashCard;
+
+public class FlashCardDaoImpl implements FlashCardDao {
+
+	public void createFlashCard(FlashCard flashCard) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public FlashCard retrieveFlashCardById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<FlashCard> retrieveAllFlashCards() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void updateFlashCard(FlashCard flashCard) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void deleteFlashCard(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void createFlashCardPreparedStmt(FlashCard flashCard) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

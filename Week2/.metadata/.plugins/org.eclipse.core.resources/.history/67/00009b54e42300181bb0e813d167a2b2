@@ -1,0 +1,100 @@
+package com.revature.dao;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.List;
+
+import com.revature.pojo.FlashCard;
+import com.revature.util.ConnectionFactory;
+
+public class FlashCardDaoImpl implements FlashCardDao {
+
+	public void createFlashCard(FlashCard flashCard) {
+		
+		Connection conn = ConnectionFactory.getInstance().getConnection();
+		
+		try {
+			Statement statement = conn.createStatement();
+			
+			String sql = "INSERT INTO FLASH_CARDS (FC_QUESTION, FC_ANSWER) VALUES('"+flashCard.getQuestion()+"', '"+flashCard.getAnswer()+"')";
+			
+			int rowsAffected = statement.executeUpdate(sql);
+			
+			System.out.println("Rows updated " + rowsAffected);
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	public FlashCard retrieveFlashCardById(int id) {
+		FlashCard fc = new FlashCard();
+		
+		String sql = "SELECT * FROM FLASH_CARDS WHERE FC_ID = ?";
+		
+		try {
+			PreparedStatement ps = 
+					ConnectionFactory.getInstance().getConnection().prepareStatement(sql);
+			ps.setInt(1, id);
+			
+			ResultSet rs = ps.executeQuery();
+			
+			while(rs.next()){
+				
+				fc.setId(rs.getInt(1));
+				fc.setQuestion(rs.getString(2));
+				fc.setAnswer(rs.getString(3));
+				
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return fc;
+	}
+
+	public List<FlashCard> retrieveAllFlashCards() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void updateFlashCard(FlashCard flashCard) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void deleteFlashCard(int id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void createFlashCardPreparedStmt(FlashCard flashCard) {
+		
+		String sql = "INSERT INTO FLASH_CARDS (FC_QUESTION, FC_ANSWER) VALUES(?, ?)";
+		
+		try {
+			
+			Connection conn = ConnectionFactory.getInstance().getConnection();
+			
+			conn.setAutoCommit(false);
+			
+			PreparedStatement ps = 
+					conn.prepareStatement(sql);
+			ps.setString(1, flashCard.getQuestion());
+			ps.setString(2, flashCard.getAnswer());
+			ps.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+}

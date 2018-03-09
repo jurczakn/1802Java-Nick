@@ -1,0 +1,17 @@
+package com.revature.driver;
+
+import com.revature.util.ConnectionFactory;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		//ConnectionFactory.getInstance().getConnection();
+		
+		
+		
+		System.out.println("everything fine");
+
+	}
+
+}
