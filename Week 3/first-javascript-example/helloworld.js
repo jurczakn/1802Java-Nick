@@ -90,6 +90,32 @@ var myObject = new myClass("hi", "bye");
 
 console.log(myObject.getName());
 
+function add(x, y){
+
+    console.log("inside 2 param add");
+    console.log(x + y);
+
+}
+//overloading method
+function add(x, y, z){
+
+    if(!z){
+
+        console.log("inside 2 param add");
+        console.log(x + y);
+        return;
+
+    }
+
+    console.log("inside 3 param add");
+    let ret = 0;
+    for (let i = 0; i< arguments.length; i++){
+        ret += arguments[i];
+    }
+    console.log(ret);
+
+}
+
 window.onload = function(){
 
     //document object model
@@ -112,6 +138,7 @@ window.onload = function(){
     button.setAttribute("disabled", "true");
 
     document.getElementById("myDiv").appendChild(button);
+
 
 
 
