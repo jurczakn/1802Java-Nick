@@ -89,3 +89,30 @@ class myClass{
 var myObject = new myClass("hi", "bye");
 
 console.log(myObject.getName());
+
+window.onload = function(){
+
+    //document object model
+    b = document.getElementById("boss");
+    b.style.fontWeight = "bold";
+    b.innerHTML = "this is different now";
+
+    b.innerHTML = "<a href='http://www.google.com'>click Here</a>";
+
+    var p = document.createElement("p");
+
+    p.innerHTML = "this is a newly created paragraph";
+
+    document.getElementById("myDiv").appendChild(p);
+
+    var button = document.createElement("button");
+
+    button.innerHTML = "click me";
+
+    button.setAttribute("disabled", "true");
+
+    document.getElementById("myDiv").appendChild(button);
+
+
+
+}
