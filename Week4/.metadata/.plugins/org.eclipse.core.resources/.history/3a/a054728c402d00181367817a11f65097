@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Book</title>
+</head>
+<body>
+
+	<button id="getBook">Click to get an awesome book</button>
+	
+	<div id="stuff"></div>
+
+	<script type="text/javascript" src="resources/bookMaker.js"></script>
+</body>
+</html>

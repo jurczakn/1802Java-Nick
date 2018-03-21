@@ -1,0 +1,29 @@
+function getBook(){
+	
+	console.log("inside get Book");
+	
+	var xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = function(){
+		console.log("ready state: " + xhr.readyState);
+		console.log("status: " + xhr.status);
+		if(xhr.readyState === 4 && xhr.status === 200){
+			var book = JSON.parse(xhr.responseText);
+			document.getElementById("stuff").innerHTML = book.title;
+			console.log(book);
+			
+		}
+		
+		
+		
+	}
+	
+	xhr.open("GET", "/book", true);
+	xhr.send();
+	
+}
+
+window.onload = function(){
+	
+	document.getElementById("getBook").addEventListener("click", getBook, false);
+	
+}

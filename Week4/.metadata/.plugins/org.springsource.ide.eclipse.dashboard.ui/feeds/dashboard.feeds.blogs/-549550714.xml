@@ -16,7 +16,7 @@
     <id>tag:spring.io,2018-03-19:3213</id>
     <updated>2018-03-21T14:32:00Z</updated>
     <content type="html">&lt;p&gt;Posting this on behalf of &lt;a href="http://www.twitter.com/mkheck"&gt;Mark Heckler&lt;/a&gt;, from the Pivotal evangelist team.&lt;/p&gt;
-&lt;p&gt;The last 12 months have been incredible for Spring developers. In that time, we’ve seen Spring Framework 5, Spring Boot 2, and Project Reactor go GA. We’ve also had new and updated component releases in every major Spring project! There’s never been a better time to be a Spring dev!&lt;/p&gt;
+&lt;p&gt;The last 12 months have been incredible for Spring developers. In that time, we’ve seen Spring Framework 5.0, Spring Boot 2, and Project Reactor go GA. We’ve also had new and updated component releases in every major Spring project! There’s never been a better time to be a Spring dev!&lt;/p&gt;
 &lt;p&gt;With all of these new tools and features, how can you keep up? How can you learn the most, in the shortest amount of time, from Spring team developers and key contributors? Come to &lt;a href="https://springoneplatform.io/?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=s1p-heckler-q118"&gt;SpringOne Platform&lt;/a&gt;, of course! This September 24-27 we will all be gathering at the Gaylord National Resort in National Harbor, MD (near Washington, D.C.) to dive deep into the new bits and discuss (and show) how to put them to full use, at full velocity. The week will be packed with live coding and lively conversations, and you’re invited to be a part of it!&lt;/p&gt;
 &lt;p&gt;Just a few of the hottest topics that we’ll be exploring at SpringOne Platform:&lt;/p&gt;
 &lt;ul&gt;
@@ -29,7 +29,7 @@
   &lt;li&gt;
   &lt;p&gt;Spring Boot 2.0 takes all of the goodness of all of the Spring projects and even more and enables you to quickly build production-ready applications deployable anywhere there’s a JVM. Spring Boot 2 is even more powerful than v1.x due to its inclusion of Kotlin, Project Reactor, updated testing chops (including JUnit 5), and more!&lt;/p&gt;&lt;/li&gt;
   &lt;li&gt;
-  &lt;p&gt;Spring Cloud takes routing, streams, and general cloud dominance further than ever. The newly GA Spring Cloud Gateway puts intelligent routing in top gear, offering HTTP/SSE/WebSocket routing, rate limiting, canary deploy functionality, and more. Spring Cloud Stream lets you integrate and interact with popular message queue solutions like RabbitMQ and Apache Kafka dynamically, using powerful abstractions to give your streaming applications superpowers.&lt;/p&gt;&lt;/li&gt;
+  &lt;p&gt;Spring Cloud takes routing, streams, and general cloud dominance further than ever. Spring Cloud Gateway puts intelligent routing in top gear, offering HTTP/SSE/WebSocket routing, rate limiting, canary deploy functionality, and more. Spring Cloud Stream lets you integrate and interact with popular message queue solutions like RabbitMQ and Apache Kafka dynamically, using powerful abstractions to give your streaming applications superpowers.&lt;/p&gt;&lt;/li&gt;
   &lt;li&gt;
   &lt;p&gt;Spring Data is now reactive! For databases that expose reactive APIs, there is no better way to exploit (and SCALE) them than with Spring Data.&lt;/p&gt;&lt;/li&gt;
   &lt;li&gt;
@@ -38,8 +38,7 @@
   &lt;p&gt;We’ll also talk about microservices, CI/CD, event sourcing, achieving and maintaining development velocity, and SO MUCH MORE! You aren’t going to want to miss any of this.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Come prepared to drink deeply from the (Spring) source! Join us at SpringOne Platform to learn, share, grow, and supercharge your teams&amp;rsquo; knowledge and velocity. Can’t wait to see you there!&lt;/p&gt;
-&lt;p&gt;Cheers,&lt;br/&gt;&lt;a href="http://www.twitter.com/mkheck"&gt;Mark&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Oh, and one more thing! Use the code S1P200_MHeckler to save serious money on your ticket and bring your whole team. &lt;/p&gt;</content>
+&lt;p&gt;Cheers,&lt;br/&gt;&lt;a href="http://www.twitter.com/mkheck"&gt;Mark&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
   <entry>
     <title>This Week in Spring - March 20th, 2018</title>
