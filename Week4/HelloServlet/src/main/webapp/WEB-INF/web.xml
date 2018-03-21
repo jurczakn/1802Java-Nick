@@ -9,5 +9,15 @@
   	<servlet-name>HelloServlet</servlet-name>
   	<url-pattern>/greet</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LifeCycleServlet</servlet-name>
+  	<servlet-class>com.revature.servlet.LifeCycleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LifeCycleServlet</servlet-name>
+  	<url-pattern>/life</url-pattern>
+  </servlet-mapping>
+	
 	
 </web-app>

@@ -5,7 +5,39 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-03-19T10:55:00Z</updated>
+  <updated>2018-03-21T05:17:55Z</updated>
+  <entry>
+    <title>This Week in Spring - March 20th, 2018</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/03/21/this-week-in-spring-march-20th-2018" />
+    <category term="engineering" label="Engineering" />
+    <author>
+      <name>Josh Long</name>
+    </author>
+    <id>tag:spring.io,2018-03-21:3214</id>
+    <updated>2018-03-21T05:17:55Z</updated>
+    <content type="html">&lt;p&gt;Hi Spring fans, and welcome to the first day of the Spring season! This week I&amp;rsquo;m in San Francisco visiting some customers and just hanging out, working on new Spring Tips installments, enjoying the amazing weather. As if today wasn&amp;rsquo;t exciting enough, Java 10 &lt;em&gt;also&lt;/em&gt; shipped today! I know that all seems like enough already, but read on as we have a lot of good stuff this week!&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;We want your feedback on this Spring Cloud Contract proposal to support &lt;a href="https://github.com/spring-cloud/spring-cloud-contract/issues/580"&gt;fetching stubs over different protocols&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Data Flow ninja &lt;a href="https://spring.io/blog/2018/03/19/spring-cloud-data-flow-1-4-0-released"&gt;Gunnar Hillert has just announced Spring Cloud Data Flow 1.4.0&lt;/a&gt;. The new release includes improved dashboards, versioned streams, a new stream deployment builder, support for Docker compose, security improvements, proxy server support for the shell, LDAP Role Mapping support and improved documentation, among other things. This is a massive release with a lot of good stuff, so don&amp;rsquo;t miss it!&lt;/li&gt;
+  &lt;li&gt;Spring Security and OAuth-ninja Joe Grandja &lt;a href="https://spring.io/blog/2018/03/16/spring-security-oauth-2-3-0-released"&gt;has just released Spring Security OAuth 2.3.0&lt;/a&gt; which now supports Elliptic Curve signature verification in &lt;code&gt;JwkTokenStore&lt;/code&gt;, among other things.&lt;/li&gt;
+  &lt;li&gt;Micrometer project lead &lt;a href="https://spring.io/blog/2018/03/16/micrometer-spring-boot-2-s-new-application-metrics-collector"&gt;Jon Schneider gives an &lt;em&gt;amazing&lt;/em&gt; introduction to all things Micrometer in this blog&lt;/a&gt;. Seriously, go read it. Micrometer is the metrics collection facade that underpins the &lt;code&gt;/actuator/events&lt;/code&gt; endpoint in Spring Boot 2+. It is not tied to Spring or Spring Boot, though, and this post is well worth a read no matter what your technical stack.&lt;/li&gt;
+  &lt;li&gt;Spring Cloud co-founder Spencer Gibb has been toying with integrating Retrofit, as a sort of alternative to using something like Feign. This is a work-in-progress example, but &lt;a href="https://github.com/spring-cloud-incubator/spring-cloud-square/pull/2"&gt;feedback is always valuable and it&amp;rsquo;s exciting to see what might be coming&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Open Service Broker lead Scott Frederick &lt;a href="https://spring.io/blog/2018/03/13/spring-cloud-open-service-broker-m1-released"&gt;has just announced Spring Cloud Open Service Broker 2.0.0.M1&lt;/a&gt;. This new release has a Spring Boot 2 baseline, supports both Spring MVC and Spring WebFlux, and provides improved Spring Boot auto-configuration. If you&amp;rsquo;re building service brokers for Cloud Foundry or Kubernetes, you&amp;rsquo;re going &lt;a href="https://spring.io/blog/2018/03/13/spring-cloud-open-service-broker-m1-released"&gt;to want to see this post&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;This is a &lt;a href="https://www.infoq.com/articles/Servlet-and-Reactive-Stacks-Spring-Framework-5"&gt;must-read article&lt;/a&gt; by Spring Web team ninja Rossen Stoyanchev on the choice between Servlet APIs and reactive APIs for Spring users in Spring MVC and Spring WebFlux: &amp;ldquo;Spring MVC or Spring WebFlux, which should you use? A perfectly valid question, but one that sets up an unsound dichotomy&amp;rdquo;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="http://mail.openjdk.java.net/pipermail/announce/2018-March/000247.html"&gt;Java 10 is here&lt;/a&gt;! Congrats to the Java team! Get it while its hot! This is the first release to support local type inference (&lt;code&gt;var&lt;/code&gt;).&lt;/li&gt;
+  &lt;li&gt;The &lt;em&gt;SivaLabs&lt;/em&gt; blog continues their look at microservices in Part 6, &lt;a href="https://sivalabs.in/2018/03/microservices-part-6-distributed-tracing-with-spring-cloud-sleuth-and-zipkin/"&gt;&lt;em&gt;Distributed Tracing with Spring Cloud Sleuth and Zipkin&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The Trampoline project has been &lt;a href="https://twitter.com/trampolinesb/status/975822544749170689?s=12"&gt;updated to support Spring Boot 2.0&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/chuhnk/status/975113977675026433"&gt;Asim Aslam&lt;/a&gt; likes Project Riff, the function-as-a-service offering from Pivotal. &lt;a href="https://projectriff.io/"&gt;You might, too&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;IBM executive Eric Andersen, tweeting from the IBM Think 2018 event, looks forward to some of the exciting opportunities &lt;a href="https://twitter.com/cloudfoundry/status/975873322209591297"&gt;for Cloud Foundry and the Istio proxy&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Dhiraj Ray has a nice post over on the Java Code Geeks blog on how to &lt;a href="https://www.javacodegeeks.com/2018/03/spring-cloud-configuration-externalize-application-configuration.html"&gt;externalize configuration in a Spring application&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Spring Cloud Contract lead Marcin Grzejszczak &lt;a href="https://twitter.com/MGrzejszczak/status/973919108298432515"&gt;tweets&lt;/a&gt; that, thanks to Olga Maciaszek, you can now understand Spring Cloud Contract &lt;a href="https://cloud.spring.io/spring-cloud-contract/multi/multi__spring_cloud_contract_verifier_introduction.html#spring-cloud-contract-verifier-intro-three-second-tour"&gt;in 3 seconds&lt;/a&gt; or &lt;a href="https://cloud.spring.io/spring-cloud-contract/multi/multi__spring_cloud_contract_verifier_introduction.html#spring-cloud-contract-verifier-intro-three-minute-tour"&gt;3 minutes&lt;/a&gt;. There&amp;rsquo;s &lt;a href="https://cloud.spring.io/spring-cloud-contract/multi/multi__spring_cloud_contract_verifier_introduction.html#_step_by_step_guide_to_consumer_driven_contracts_cdc"&gt;also a ten minutes version&lt;/a&gt; and a &lt;a href="http://cloud-samples.spring.io/spring-cloud-contract-samples/workshops.html"&gt;roughly five day version&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Dan Newton has a nice post looking at using &lt;a href="https://lankydanblog.com/2018/03/15/doing-stuff-with-spring-webflux/"&gt;the new reactive web runtime Spring WebFlux&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;The SivaLabs series on &lt;a href="https://sivalabs.in/2018/03/microservices-part-5-spring-cloud-zuul-proxy-as-api-gateway/"&gt;building microservices with Spring Cloud looks, in this fifth post, on at using Spring Cloud Zuul&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Robert Winkler has just &lt;a href="https://twitter.com/rbrtwnklr/status/973552844577083393?s=12"&gt;released Resilience4j 0.12.0&lt;/a&gt; which upgrades Vavr from Spring Boot from 1.4.3.RELEASE to 1.5.5.RELEASE, among many other dependencies. It also adds a reset method to Circuit Breaker, adds a disable and force_open states to Circuit Breaker, adds &lt;a href="https://projectreactor.io/"&gt;Project Reactor&lt;/a&gt; support for circuit breaker, bulkhead and rate limiter, &lt;a href="http://micrometer.io"&gt;adds support for Micrometer&lt;/a&gt;, and ensures that the Reactor operators can be used together on a &lt;code&gt;Flux&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;Check out our latest post about &lt;a href="https://touk.pl/blog/2018/03/05/spring-boot-2-0-http-request-metrics-with-micrometer/"&gt;Spring Boot 2.0 and Micrometer on Touk Team Blog&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Matt McCandless continues his look &lt;a href="https://www.javacodegeeks.com/2016/10/getting-started-jhipster-part-2.html"&gt;at using JHipster&lt;/a&gt;, which builds upon Spring Boot and Angular. Check it out!&lt;/li&gt;
+&lt;/ul&gt;</content>
+  </entry>
   <entry>
     <title>Spring Cloud Data Flow 1.4.0 Released</title>
     <link rel="alternate" href="https://spring.io/blog/2018/03/19/spring-cloud-data-flow-1-4-0-released" />
@@ -1557,139 +1589,6 @@ ParserPool parserPool() {
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Session Apple SR1 Released</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/03/01/spring-session-apple-sr1-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2018-03-01:3196</id>
-    <updated>2018-03-01T14:43:55Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;em&gt;This post was authored by &lt;a href="https://github.com/vpavic"&gt;Vedran Pavi?&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;On behalf of the community I&amp;#8217;m pleased to announce the release of Spring Session BOM &lt;code&gt;Apple-SR1&lt;/code&gt;. With the changes to Spring Session modules described in &lt;a href="https://spring.io/blog/2018/01/16/spring-session-2-0-0-released#spring-session-modules"&gt;&lt;code&gt;2.0.0.RELEASE&lt;/code&gt; announcement&lt;/a&gt;, the addition of &lt;a href="https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Importing_Dependencies"&gt;bill of materials&lt;/a&gt; (BOM) module was a logical next step.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="admonitionblock note"&gt;
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td class="icon"&gt;
-&lt;div class="title"&gt;Note&lt;/div&gt;
-&lt;/td&gt;
-&lt;td class="content"&gt;
-The originally released &lt;code&gt;Apple-RELEASE&lt;/code&gt; contained a glitch in published BOM so make sure you use &lt;code&gt;Apple-SR1&lt;/code&gt;.
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The BOM provides dependency management for Spring Session core modules (which include Data Redis, Hazelcast and JDBC) and Spring Session Data MongoDB. The following table provides an overview of all the included modules and their respective versions:&lt;/p&gt;
-&lt;/div&gt;
-&lt;table class="tableblock frame-all grid-all spread"&gt;
-&lt;colgroup&gt;
-&lt;col style="width: 50%;"&gt;
-&lt;col style="width: 50%;"&gt;
-&lt;/colgroup&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th class="tableblock halign-left valign-top"&gt;Module&lt;/th&gt;
-&lt;th class="tableblock halign-left valign-top"&gt;Version&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Spring Session Core&lt;/p&gt;&lt;/td&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;2.0.2.RELEASE&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Spring Session Data MongoDB&lt;/p&gt;&lt;/td&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;2.0.2.RELEASE&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Spring Session Data Redis&lt;/p&gt;&lt;/td&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;2.0.2.RELEASE&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Spring Session Hazelcast&lt;/p&gt;&lt;/td&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;2.0.2.RELEASE&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;Spring Session JDBC&lt;/p&gt;&lt;/td&gt;
-&lt;td class="tableblock halign-left valign-top"&gt;&lt;p class="tableblock"&gt;&lt;code&gt;2.0.2.RELEASE&lt;/code&gt;&lt;/p&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;div class="sect2"&gt;
-&lt;h3 id="spring-session"&gt;&lt;a class="anchor" href="#spring-session"&gt;&lt;/a&gt;Spring Session&lt;/h3&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The &lt;code&gt;2.0.2.RELEASE&lt;/code&gt; maintenance release contains a few bug fixes and dependency upgrades. You can find the complete details of the release in the &lt;a href="https://github.com/spring-projects/spring-session/milestone/32?closed=1"&gt;changelog&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-session/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-session/docs/2.0.2.RELEASE/reference/html5/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect2"&gt;
-&lt;h3 id="spring-session-data-mongodb"&gt;&lt;a class="anchor" href="#spring-session-data-mongodb"&gt;&lt;/a&gt;Spring Session Data MongoDB&lt;/h3&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The &lt;code&gt;2.0.2.RELEASE&lt;/code&gt; maintenance release contains Jackson serialization support improvements and dependency upgrades.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-session-data-mongodb"&gt;GitHub&lt;/a&gt; | &lt;a href="https://github.com/spring-projects/spring-session-data-mongodb/issues"&gt;Issues&lt;/a&gt; | &lt;a href="https://docs.spring.io/spring-session-data-mongodb/docs/2.0.2.RELEASE/reference/htmlsingle/"&gt;Documentation&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h1 id="using-the-bom" class="sect0"&gt;&lt;a class="anchor" href="#using-the-bom"&gt;&lt;/a&gt;Using the BOM&lt;/h1&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;With Maven:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;dependencyManagement&amp;gt;
-	&amp;lt;dependencies&amp;gt;
-		&amp;lt;dependency&amp;gt;
-			&amp;lt;groupId&amp;gt;org.springframework.session&amp;lt;/groupId&amp;gt;
-			&amp;lt;artifactId&amp;gt;spring-session-bom&amp;lt;/artifactId&amp;gt;
-			&amp;lt;version&amp;gt;Apple-SR1&amp;lt;/version&amp;gt;
-			&amp;lt;type&amp;gt;pom&amp;lt;/type&amp;gt;
-			&amp;lt;scope&amp;gt;import&amp;lt;/scope&amp;gt;
-		&amp;lt;/dependency&amp;gt;
-	&amp;lt;/dependencies&amp;gt;
-&amp;lt;/dependencyManagement&amp;gt;
-&amp;lt;dependencies&amp;gt;
-	&amp;lt;dependency&amp;gt;
-		&amp;lt;groupId&amp;gt;org.springframework.session&amp;lt;/groupId&amp;gt;
-		&amp;lt;artifactId&amp;gt;spring-session-data-redis&amp;lt;/artifactId&amp;gt;
-	&amp;lt;/dependency&amp;gt;
-	...
-&amp;lt;/dependencies&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;With Gradle:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-gradle" data-lang="gradle"&gt;plugins {
-	id 'io.spring.dependency-management' version '1.0.4.RELEASE'
-}
-
-dependencyManagement {
-	imports {
-		mavenBom 'org.springframework.session:spring-session-bom:Apple-SR1'
-	}
-}
-
-dependencies {
-	compile 'org.springframework.session:spring-session-data-redis'
-	...
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;&lt;a href="https://projects.spring.io/spring-session/"&gt;Project Page&lt;/a&gt; | &lt;a href="https://stackoverflow.com/questions/tagged/spring-session"&gt;Stack Overflow&lt;/a&gt; | &lt;a href="https://gitter.im/spring-projects/spring-session"&gt;Gitter&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;</content>
   </entry>
 </feed>
