@@ -5,7 +5,42 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2018-03-21T05:17:55Z</updated>
+  <updated>2018-03-21T14:32:00Z</updated>
+  <entry>
+    <title>It’s never been a better time to be a Spring Developer</title>
+    <link rel="alternate" href="https://spring.io/blog/2018/03/21/it-s-never-been-a-better-time-to-be-a-spring-developer" />
+    <category term="news" label="News and Events" />
+    <author>
+      <name>Pieter Humphrey</name>
+    </author>
+    <id>tag:spring.io,2018-03-19:3213</id>
+    <updated>2018-03-21T14:32:00Z</updated>
+    <content type="html">&lt;p&gt;Posting this on behalf of &lt;a href="http://www.twitter.com/mkheck"&gt;Mark Heckler&lt;/a&gt;, from the Pivotal evangelist team.&lt;/p&gt;
+&lt;p&gt;The last 12 months have been incredible for Spring developers. In that time, we’ve seen Spring Framework 5, Spring Boot 2, and Project Reactor go GA. We’ve also had new and updated component releases in every major Spring project! There’s never been a better time to be a Spring dev!&lt;/p&gt;
+&lt;p&gt;With all of these new tools and features, how can you keep up? How can you learn the most, in the shortest amount of time, from Spring team developers and key contributors? Come to &lt;a href="https://springoneplatform.io/?utm_source=pivotal-email&amp;utm_medium=email-link&amp;utm_campaign=s1p-heckler-q118"&gt;SpringOne Platform&lt;/a&gt;, of course! This September 24-27 we will all be gathering at the Gaylord National Resort in National Harbor, MD (near Washington, D.C.) to dive deep into the new bits and discuss (and show) how to put them to full use, at full velocity. The week will be packed with live coding and lively conversations, and you’re invited to be a part of it!&lt;/p&gt;
+&lt;p&gt;Just a few of the hottest topics that we’ll be exploring at SpringOne Platform:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+  &lt;p&gt;Project Reactor, allows you to easily create massively scalable &amp;amp; performant distributed applications and systems, maximizing reactive gains throughout the entire stack!&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;riff brings functions, sometimes called &amp;ldquo;serverless&amp;rdquo; capabilities, to your Spring developers. See how to get started and go far fast using riff…?and learn all about its cool recursive acronym (riff is for functions)!&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;Spring Framework 5 launched with Java 8 and 9 support and full first-class support for Kotlin, the language I call &amp;ldquo;Java++&amp;rdquo; for its logical leap forward with Java capabilities and its seamless interoperability with Java and Spring. It also incorporates WebFlux+Netty side by side with WebMVC+Tomcat, allowing you to move between imperative and reactive code and capabilities with ridiculous ease!&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;Spring Boot 2.0 takes all of the goodness of all of the Spring projects and even more and enables you to quickly build production-ready applications deployable anywhere there’s a JVM. Spring Boot 2 is even more powerful than v1.x due to its inclusion of Kotlin, Project Reactor, updated testing chops (including JUnit 5), and more!&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;Spring Cloud takes routing, streams, and general cloud dominance further than ever. The newly GA Spring Cloud Gateway puts intelligent routing in top gear, offering HTTP/SSE/WebSocket routing, rate limiting, canary deploy functionality, and more. Spring Cloud Stream lets you integrate and interact with popular message queue solutions like RabbitMQ and Apache Kafka dynamically, using powerful abstractions to give your streaming applications superpowers.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;Spring Data is now reactive! For databases that expose reactive APIs, there is no better way to exploit (and SCALE) them than with Spring Data.&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;Spring Security is also Reactor-ready and enables you to secure your apps with maximum scalability. With the new Spring Security, scale your concurrent users like crazy without sacrificing performance or security!&lt;/p&gt;&lt;/li&gt;
+  &lt;li&gt;
+  &lt;p&gt;We’ll also talk about microservices, CI/CD, event sourcing, achieving and maintaining development velocity, and SO MUCH MORE! You aren’t going to want to miss any of this.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Come prepared to drink deeply from the (Spring) source! Join us at SpringOne Platform to learn, share, grow, and supercharge your teams&amp;rsquo; knowledge and velocity. Can’t wait to see you there!&lt;/p&gt;
+&lt;p&gt;Cheers,&lt;br/&gt;&lt;a href="http://www.twitter.com/mkheck"&gt;Mark&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Oh, and one more thing! Use the code S1P200_MHeckler to save serious money on your ticket and bring your whole team. &lt;/p&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - March 20th, 2018</title>
     <link rel="alternate" href="https://spring.io/blog/2018/03/21/this-week-in-spring-march-20th-2018" />
@@ -1431,164 +1466,6 @@ dependencies {&#xD;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;&lt;a href="https://github.com/spring-projects/spring-security-oauth2-boot/"&gt;GitHub&lt;/a&gt; |
 &lt;a href="https://docs.spring.io/spring-security-oauth2-boot/docs/current-SNAPSHOT/reference/htmlsingle/"&gt;Reference&lt;/a&gt; | &lt;a href="http://stackoverflow.com/questions/tagged/spring-security"&gt;Help&lt;/a&gt;&lt;/p&gt;
-&lt;/div&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Security SAML and this week's SAML Vulnerability</title>
-    <link rel="alternate" href="https://spring.io/blog/2018/03/01/spring-security-saml-and-this-week-s-saml-vulnerability" />
-    <category term="engineering" label="Engineering" />
-    <author>
-      <name>Rob Winch</name>
-    </author>
-    <id>tag:spring.io,2018-02-28:3194</id>
-    <updated>2018-03-01T19:23:00Z</updated>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;This week, the software world found out that &lt;a href="https://duo.com/blog/duo-finds-saml-vulnerabilities-affecting-multiple-implementations"&gt;SAML Vulnerabilities Affecting Multiple Implementations&lt;/a&gt; were discovered. If you use Spring Security SAML&amp;#8217;s defaults, you are not impacted by this vulnerability.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The underlying implementation that Spring Security SAML uses is Shibboleth&amp;#8217;s OpenSAML Java library. The OpenSAML Java implementation was not listed in the libraries that contain the vulnerability (Shibboleth openSAML C++ was vulnerable). However, if the &lt;code&gt;ParserPool&lt;/code&gt; &lt;a href="https://github.com/spring-projects/spring-security-saml/issues/228"&gt;has been customized&lt;/a&gt;, you may be impacted.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="not-safe-configurations"&gt;&lt;a class="anchor" href="#not-safe-configurations"&gt;&lt;/a&gt;NOT Safe Configurations&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Specifically, if the application explicitly sets the &lt;code&gt;BasicParserPool&lt;/code&gt; or the &lt;code&gt;StaticBasicParserPool&lt;/code&gt; to have &lt;code&gt;ignoreComments = false&lt;/code&gt;, it is vulnerable to the exploit. For example, the following configurations are vulnerable:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Unsafe Java Configuration with &lt;code&gt;StaticBasicParserPool&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;// NOT secure!!!
-@Bean(initMethod = "initialize")
-ParserPool parserPool() {
-    StaticBasicParserPool pool = new StaticBasicParserPool();
-    // DO NOT set ignoreComments = false opens up exploit
-    pool.setIgnoreComments(false);
-    return pool;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Unsafe Java Configuration with &lt;code&gt;BasicParserPool&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;// NOT secure!!!
-@Bean
-ParserPool parserPool() {
-    BasicParserPool pool = new BasicParserPool();
-    // DO NOT set ignoreComments = false opens up exploit
-    pool.setIgnoreComments(false);
-    return pool;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Unsafe XML Configuration with &lt;code&gt;StaticBasicParserPool&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;!-- NOT secure!!! --&amp;gt;
-&amp;lt;bean id="parserPool" init-method="initialize"
-           class="org.opensaml.xml.parse.StaticBasicParserPool"&amp;gt;
-    &amp;lt;!-- DO NOT set ignoreComments = false opens up exploit --&amp;gt;
-    &amp;lt;property name="ignoreComments" value="false"/&amp;gt;
-&amp;lt;/bean&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Unsafe XML Configuration with &lt;code&gt;BasicParserPool&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;!-- NOT secure!!! --&amp;gt;
-&amp;lt;bean id="parserPool" class="org.opensaml.xml.parse.BasicParserPool"&amp;gt;
-    &amp;lt;!-- DO NOT set ignoreComments = false opens up exploit --&amp;gt;
-    &amp;lt;property name="ignoreComments" value="false"/&amp;gt;
-&amp;lt;/bean&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="safe-configurations"&gt;&lt;a class="anchor" href="#safe-configurations"&gt;&lt;/a&gt;Safe Configurations&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;The following configurations are safe:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Safe Java Configuration with &lt;code&gt;StaticBasicParserPool&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@Bean(initMethod = "initialize")
-ParserPool parserPool() {
-    StaticBasicParserPool pool = new StaticBasicParserPool();
-    // ignoreComments default is true (safe)
-    return pool;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Safe Java Configuration with &lt;code&gt;BasicParserPool&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-java" data-lang="java"&gt;@Bean(initMethod = "initialize")
-ParserPool parserPool() {
-    BasicParserPool pool = new BasicParserPool();
-    // ignoreComments default is true (safe)
-    return pool;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Safe XML Configuration with &lt;code&gt;StaticBasicParserPool&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;bean id="parserPool" class="org.opensaml.xml.parse.StaticBasicParserPool"&amp;gt;
-    &amp;lt;!-- ignoreComments default is true (safe) --&amp;gt;
-&amp;lt;/bean&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Safe XML Configuration with &lt;code&gt;BasicParserPool&lt;/code&gt;&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="listingblock"&gt;
-&lt;div class="content"&gt;
-&lt;pre class="prettyprint highlight"&gt;&lt;code class="language-xml" data-lang="xml"&gt;&amp;lt;bean id="parserPool" init-method="initialize"
-           class="org.opensaml.xml.parse.BasicParserPool"&amp;gt;
-    &amp;lt;!-- ignoreComments default is true (safe) --&amp;gt;
-&amp;lt;/bean&amp;gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="sect1"&gt;
-&lt;h2 id="unsafe-paserpool-configurations"&gt;&lt;a class="anchor" href="#unsafe-paserpool-configurations"&gt;&lt;/a&gt;Unsafe PaserPool Configurations&lt;/h2&gt;
-&lt;div class="sectionbody"&gt;
-&lt;div class="paragraph"&gt;
-&lt;p&gt;Now is probably a good time to review additional &lt;a href="https://shibboleth.net/community/advisories/secadv_20131213.txt"&gt;unsafe configurations&lt;/a&gt;. Specifically, the following &lt;code&gt;ParserPool&lt;/code&gt; properties are UNSAFE:&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class="ulist"&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;It is UNSAFE to set &lt;code&gt;expandEntityReferences&lt;/code&gt; to &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;It is UNSAFE to set &lt;code&gt;javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;It is UNSAFE to set  &lt;code&gt;&lt;a href="http://apache.org/xml/features/disallow-doctype-dec" class="bare"&gt;http://apache.org/xml/features/disallow-doctype-dec&lt;/a&gt;&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt;. This is a Xerces-specific feature, including derivatives such as the internal JAXP implementations supplied with the Oracle and OpenJDK JREs. For other JAXP implementations, read the documentation for your particular implementation for how to achieve a similar configuration.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;It is UNSAFE to set &lt;code&gt;ignoreComments&lt;/code&gt; to &lt;code&gt;false&lt;/code&gt; (as discussed in this article)&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
 </feed>
