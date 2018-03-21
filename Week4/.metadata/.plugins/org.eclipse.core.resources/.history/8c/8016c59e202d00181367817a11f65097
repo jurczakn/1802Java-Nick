@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
   <display-name>HelloServlet</display-name>
-  <context-param>
-    <param-name>name2</param-name>
-    <param-value>another value</param-value>
-  </context-param>
-  <servlet>
-    <servlet-name>ConfigServlet</servlet-name>
-    <servlet-class>com.revature.servlet.ConfigServlet</servlet-class>
-    <init-param>
-      <param-name>name1</param-name>
-      <param-value>value1</param-value>
-    </init-param>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ConfigServlet</servlet-name>
-    <url-pattern>/config</url-pattern>
-  </servlet-mapping>
+  
+  <!-- Hello Servlet -->
+  
   <servlet>
     <servlet-name>HelloServlet</servlet-name>
     <servlet-class>com.revature.servlet.HelloServlet</servlet-class>
@@ -25,15 +12,21 @@
     <servlet-name>HelloServlet</servlet-name>
     <url-pattern>/greet</url-pattern>
   </servlet-mapping>
+  
+  <!-- LifeCycle Servlet -->
   <servlet>
     <servlet-name>LifeCycleServlet</servlet-name>
     <servlet-class>com.revature.servlet.LifeCycleServlet</servlet-class>
+    <!-- allows you to load your Servlet as soon as the server starts up -->
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet-mapping>
     <servlet-name>LifeCycleServlet</servlet-name>
     <url-pattern>/life</url-pattern>
   </servlet-mapping>
+  
+  <!-- Login/Home Servlets -->
+  
   <servlet>
     <description></description>
     <display-name>LoginServlet</display-name>
@@ -53,15 +46,5 @@
   <servlet-mapping>
     <servlet-name>HomeServlet</servlet-name>
     <url-pattern>/home</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>ContextServlet</display-name>
-    <servlet-name>ContextServlet</servlet-name>
-    <servlet-class>com.revature.servlet.ContextServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>ContextServlet</servlet-name>
-    <url-pattern>/con</url-pattern>
   </servlet-mapping>
 </web-app>
