@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-databinding',
@@ -11,11 +12,15 @@ export class DatabindingComponent implements OnInit {
 
   interpolationNotation = '{{}}';
 
-  title = 'Interpolation';
+  title = 'Databinding';
 
   propertyBindingNotation = '[]';
 
-  twoWayBindingNotation = '[{}]';
+  twoWayBindingNotation = '[()]';
+
+  twoWayValue = 'anything';
+
+  ngModelNotation = '[(ngModel)]';
 
   public objectStyle = {
 
@@ -30,7 +35,7 @@ export class DatabindingComponent implements OnInit {
 
   counter = 0;
 
-  public addToCounter(){
+  public addToCounter(): void {
 
     this.counter++;
 
