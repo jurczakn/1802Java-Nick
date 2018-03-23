@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterpolationComponent implements OnInit {
 
+  title= 'Welcome to Interpolation';
+  interpolationNotation= '{{}}';
+
   constructor() { }
 
   ngOnInit() {
