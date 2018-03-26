@@ -9,6 +9,9 @@ import { HelloWorldComponent } from './components/helloworld/helloworld.componen
 import { FailureComponent } from './components/failure/failure.component';
 import { AlertsComponent } from './components/alerts/alerts.component';
 
+// Routing
+import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +22,8 @@ import { AlertsComponent } from './components/alerts/alerts.component';
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
