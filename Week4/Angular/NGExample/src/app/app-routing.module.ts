@@ -21,7 +21,8 @@ import { DiComponent } from './components/di/di.component';
 import { ServiceComponent } from './components/service/service.component';
 import { DatabindingComponent } from './components/databinding/databinding.component';
 import { InterpolationComponent } from './components/interpolation/interpolation.component';
- 
+import { StructuralComponent } from './components/structural/structural.component';
+
 export const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
   { path: 'main',  component: MainComponent },
@@ -40,10 +41,11 @@ export const routes: Routes = [
   { path: 'routing',  component: RoutingComponent },
   { path: 'di',  component: DiComponent },
   { path: 'service',  component: ServiceComponent },
-  { path: 'databinding', component: DatabindingComponent},
-  {path: 'interpolation', component: InterpolationComponent}
+  { path: 'databinding', component: DatabindingComponent },
+  { path: 'interpolation', component: InterpolationComponent },
+  { path: 'structural', component: StructuralComponent }
 ];
- 
+
 @NgModule({
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]

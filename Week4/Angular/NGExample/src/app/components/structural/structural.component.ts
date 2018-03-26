@@ -11,7 +11,7 @@ export class StructuralComponent implements OnInit {
 
   documentation = 'https://angular.io/guide/structural-directives';
 
-  arrayOfThings = ['happy', 'sad', 'indifferent'];
+  arrayOfThings = ['happy', 'sad', 'indifferent', 'excited', 'depressed'];
 
   constructor() { }
 

@@ -26,6 +26,7 @@ import { DiComponent } from './components/di/di.component';
 import { ServiceComponent } from './components/service/service.component';
 import { DatabindingComponent } from './components/databinding/databinding.component';
 import { InterpolationComponent } from './components/interpolation/interpolation.component';
+import { StructuralComponent } from './components/structural/structural.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { InterpolationComponent } from './components/interpolation/interpolation
     DiComponent,
     ServiceComponent,
     DatabindingComponent,
-    InterpolationComponent
+    InterpolationComponent,
+    StructuralComponent
   ],
   imports: [
     BrowserModule,
