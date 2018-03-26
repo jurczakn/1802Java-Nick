@@ -1,9 +1,11 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { LoggingService } from '../../services/logging.service';
 
 @Component({
   selector: 'app-failure',
   templateUrl: './failure.component.html',
-  styleUrls: ['./failure.component.css']
+  styleUrls: ['./failure.component.css'],
+  providers: [LoggingService]
 })
 export class FailureComponent implements OnInit {
 
@@ -20,12 +22,16 @@ export class FailureComponent implements OnInit {
 
     this.closed = true;
     this.notify.emit(true);
+    this.logger.log('ok', 'failure component closes');
 
   }
 
-  constructor() { }
+  constructor(private logger: LoggingService) { }
 
   ngOnInit() {
+
+    this.logger.log('info', 'failure component intiated');
+
   }
 
 }
