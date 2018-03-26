@@ -27,6 +27,12 @@ import { ServiceComponent } from './components/service/service.component';
 import { DatabindingComponent } from './components/databinding/databinding.component';
 import { InterpolationComponent } from './components/interpolation/interpolation.component';
 import { StructuralComponent } from './components/structural/structural.component';
+import { AttributeComponent } from './components/attribute/attribute.component';
+import { PipesComponent } from './components/pipes/pipes.component';
+
+//Pipes
+import { MovieFilter } from './pipes/movie-filter.pipe';
+
 
 @NgModule({
   declarations: [
@@ -50,7 +56,10 @@ import { StructuralComponent } from './components/structural/structural.componen
     ServiceComponent,
     DatabindingComponent,
     InterpolationComponent,
-    StructuralComponent
+    StructuralComponent,
+    AttributeComponent,
+    PipesComponent,
+    MovieFilter
   ],
   imports: [
     BrowserModule,

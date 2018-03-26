@@ -1,0 +1,4 @@
+<button class="btn btn-primary" (click)="addDate()">add a date</button>
+<ol>
+  <li *ngFor="let date of dates; let i = index" [ngStyle]="{backgroundColor: getBackgroundColor(i)}">{{date}}</li>
+</ol>

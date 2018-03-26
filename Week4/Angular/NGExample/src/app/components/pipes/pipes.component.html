@@ -1,1 +1,7 @@
-<h2>pipes</h2>
+Search: <input [(ngModel)]="searchTerm" type="text"/>
+
+<div *ngFor="let t of terminatorMovies | movieFilter: searchTerm">
+
+    <h5>{{t | titlecase}}</h5>
+
+</div>
