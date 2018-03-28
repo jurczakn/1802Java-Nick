@@ -4,4 +4,3 @@ This should make the merge conflict official
 This will be a merge conflict
 to build on jenkins
 second try
-third try
