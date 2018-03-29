@@ -1,0 +1,35 @@
+package com.revature.domains;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="BEAR")
+public class Bear {
+	
+	@Id
+	@Column(name = "BEAR_ID")
+	@SequenceGenerator(name="BEARID_SEQ", sequenceName="BEARID_SEQ")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="BEARID_SEQ")
+	private int bearId;
+	
+	@Column(name = "BEAR_COLOR")
+	private String bearColor;
+	
+	@Column(name = "BREED")
+	private String breed;
+	
+	@Column(name = "WEIGHT")
+	private double weight;
+	
+	
+	@Column(name = "HEIGHT")
+	private double height;
+
+	
+}

@@ -1,0 +1,27 @@
+package com.revature.domains;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="CAVE")
+public class Cave {
+	
+	@Id
+	@Column(name="CAVE_ID")
+	@SequenceGenerator(name="CAVEID_SEQ", sequenceName="CAVEID_SEQ")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="CAVEID_SEQ")
+	private int caveId;
+	
+	@Column(name="CAVE_TYPE")
+	private String caveType;
+	
+	@Column(name="SQFOOTAGE")
+	private double sqFootage;
+
+}
