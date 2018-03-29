@@ -9,7 +9,6 @@ public class Book {
 	int pageCount;
 	public Book() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Book(String title, String desc, int isbn, String author, int pageCount) {
 		super();
