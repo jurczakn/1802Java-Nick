@@ -1,0 +1,23 @@
+package com.revature.driver;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.revature.domains.HoneyPot;
+import com.revature.util.HibernateUtil;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		Session sess = HibernateUtil.getSession();
+		
+		HoneyPot hp = new HoneyPot(0, 17, 9);
+		
+		System.out.println("Before persisting object");
+		
+		Transaction t = sess.beginTransaction();
+
+	}
+
+}
