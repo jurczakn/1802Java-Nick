@@ -1,8 +1,13 @@
 package com.revature.driver;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import com.revature.domains.Bear;
+import com.revature.domains.Cave;
 import com.revature.domains.HoneyPot;
 import com.revature.util.HibernateUtil;
 
@@ -10,7 +15,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 		
-		Session sess = HibernateUtil.getSession();
+		/*Session sess = HibernateUtil.getSession();
 		
 		HoneyPot hp = new HoneyPot(0, 78, 24);
 		
@@ -32,9 +37,9 @@ public class Driver {
 		
 		sess.update(hp);
 		
-/*		HoneyPot hp2 = (HoneyPot) sess.get(HoneyPot.class, 100);
+		HoneyPot hp2 = (HoneyPot) sess.get(HoneyPot.class, 100);
 		
-		sess.delete(hp2);*/
+		sess.delete(hp2);
 		
 		HoneyPot hp3 = (HoneyPot) sess.load(HoneyPot.class, 200);
 		
@@ -46,8 +51,44 @@ public class Driver {
 		
 		System.out.println("Closed session");
 		
-		System.out.println(hp3);
-
+		System.out.println(hp3);*/
+		
+		Session sess = HibernateUtil.getSession();
+		
+		Bear parent = new Bear(0, "Orange & Blue", "Grizzley", 1000, 8, null, null, null);
+		
+		Cave bearHome = new Cave(0, "Chicago", 10000, null);
+		
+		Bear cub1 = new Bear(0, "white", "polar bear", 350, 5.4, null, null, null);
+		
+		Bear cub2 = new Bear(0, "black & white", "panda", 250, 4.5, null, null, null);
+		
+		Set<Bear> cubs = new HashSet<Bear>();
+		
+		cubs.add(cub1);
+		
+		cubs.add(cub2);
+		
+		HoneyPot hp = new HoneyPot(0, 50, 25);
+		
+		parent.setBearCubs(cubs);
+		
+		parent.setBearHome(bearHome);
+		
+		parent.setHoneyPot(hp);
+		
+		Transaction tx = sess.beginTransaction();
+		
+		sess.persist(parent);
+		
+		parent.setHeight(9);
+		
+		tx.commit();
+		
+		sess.close();
+		
+		
+		
 	}
 
 }

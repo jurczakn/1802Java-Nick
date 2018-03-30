@@ -17,7 +17,11 @@
 				<property name="show_sql">true</property>
 				<property name="hibernate.format_sql">true</property>
 				
-				<mapping class="com.revature.domains.HoneyPot"/>
+				<mapping resource="honeypot.hbm.xml"/>
+				
+				<!-- <mapping class="com.revature.domains.HoneyPot"/> -->
+				<mapping class="com.revature.domains.Bear"/>
+				<mapping class="com.revature.domains.Cave"/>
 				
 			</session-factory>
 		</hibernate-configuration>
