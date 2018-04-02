@@ -22,10 +22,9 @@
 				<!-- Specify Caching Provider -->
 				<property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.EhCacheRegionFactory</property>
 				
-				<!-- For mapping with xml -->
-				<!-- <mapping resource="honeypot.hbm.xml"/> -->
+				<mapping resource="honeypot.hbm.xml"/>
 				
-				<mapping class="com.revature.domains.HoneyPot"/>
+				<!-- <mapping class="com.revature.domains.HoneyPot"/> -->
 				<mapping class="com.revature.domains.Bear"/>
 				<mapping class="com.revature.domains.Cave"/>
 				

@@ -84,7 +84,7 @@ public class Driver {
 		
 		parent.setHeight(9);
 		
-		Query q1 = sess.getNamedQuery("@HQL_GET_ALL_BEARS");
+		Query q1 = sess.getNamedQuery("HQL_GET_ALL_BEARS");
 		
 		tx.commit();
 		
