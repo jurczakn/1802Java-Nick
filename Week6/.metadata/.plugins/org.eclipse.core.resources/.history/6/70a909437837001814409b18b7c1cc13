@@ -1,0 +1,22 @@
+package com.revature.main;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.revature.pojo.Banana;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext ac = new ClassPathXmlApplicationContext("beans.xml");
+		
+		Banana b = ac.getBean("banana", Banana.class);
+		
+		b.getPeel().setColor("YellowGreenBlack");
+		
+		System.out.println(b);
+
+	}
+
+}

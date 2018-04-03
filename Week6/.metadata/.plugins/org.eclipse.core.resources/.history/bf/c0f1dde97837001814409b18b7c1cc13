@@ -1,0 +1,17 @@
+package com.revature.pojo;
+
+public class ApplePeel implements Peel {
+
+	@Override
+	public String getColor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void setColor(String color) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
