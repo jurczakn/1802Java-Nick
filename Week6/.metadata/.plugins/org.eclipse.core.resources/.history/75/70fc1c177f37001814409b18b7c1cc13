@@ -2,7 +2,7 @@ package com.revature.pojo;
 
 public class Banana {
 	
-	private Peel peel;
+	private Peel bananaPeel;
 	
 	private String name;
 
@@ -21,7 +21,7 @@ public class Banana {
 		return peel;
 	}
 
-	public void setApplePeel(Peel peel) {
+	public void setPeel(Peel peel) {
 		this.peel = peel;
 	}
 

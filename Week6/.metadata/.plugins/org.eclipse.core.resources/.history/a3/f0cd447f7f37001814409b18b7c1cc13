@@ -21,7 +21,7 @@ public class Banana {
 		return peel;
 	}
 
-	public void setApplePeel(Peel peel) {
+	public void setBananaPeel(Peel peel) {
 		this.peel = peel;
 	}
 

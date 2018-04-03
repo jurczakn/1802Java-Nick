@@ -29,11 +29,9 @@ public class Driver {
 		
 		b2.setName("my second bean");
 		
-		/*System.out.println(b2);
+		System.out.println(b2);
 		
-		System.out.println(b);*/
-		
-		ac.getBean("lifeCycleBean");
+		System.out.println(b);
 
 	}
 

@@ -8,9 +8,5 @@
 	</bean>
 	<bean id="bananaPeel" class="com.revature.pojo.BananaPeel"></bean>
 	<bean id="applePeel" class="com.revature.pojo.ApplePeel"></bean>
-	<bean id="lifeCycleBean" class="com.revature.pojo.LifeCycleBean" scope="singleton"
-	init-method="customInit"
-	destroy-method="customDestroy"
-	/>
 
 </beans>
