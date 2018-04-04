@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-	<bean id="banana" class="com.revature.pojo.Banana" scope="prototype" autowire="byName">
-<!-- 		<property name="peel" ref="apple-peel"></property>
-		<property name="name" value="myBanana"></property> -->
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+<!-- 	<bean id="banana" class="com.revature.pojo.Banana" scope="prototype" autowire="byName">
+		<property name="peel" ref="apple-peel"></property>
+		<property name="name" value="myBanana"></property>
 	</bean>
 	<bean id="bananaPeel" class="com.revature.pojo.BananaPeel"></bean>
 	<bean id="applePeel" class="com.revature.pojo.ApplePeel"></bean>
 	<bean id="lifeCycleBean" class="com.revature.pojo.LifeCycleBean" scope="singleton"
 	init-method="customInit"
 	destroy-method="customDestroy"
-	/>
+	/> -->
+	
+	<!-- Enable Bean AutoWiring by annotation -->
+	<context:component-scan base-package="com.revature"></context:component-scan>
 
 </beans>

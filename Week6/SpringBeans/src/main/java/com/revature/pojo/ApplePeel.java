@@ -1,5 +1,8 @@
 package com.revature.pojo;
 
+import org.springframework.stereotype.Component;
+
+//@Component
 public class ApplePeel implements Peel {
 
 	@Override

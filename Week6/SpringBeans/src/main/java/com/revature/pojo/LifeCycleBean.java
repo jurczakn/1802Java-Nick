@@ -7,7 +7,9 @@ import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.beans.factory.DisposableBean;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.stereotype.Component;
 
+@Component
 public class LifeCycleBean
 		implements BeanPostProcessor, BeanNameAware, BeanFactoryAware, DisposableBean, InitializingBean {
 

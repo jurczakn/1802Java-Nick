@@ -21,7 +21,7 @@ public class Driver {
 		
 		Banana b2 = ac.getBean("banana", Banana.class);
 		
-		Peel p = ac.getBean("bananaPeel", BananaPeel.class);
+		Peel p = ac.getBean("myPeel", BananaPeel.class);
 		
 		p.setColor("white");
 		

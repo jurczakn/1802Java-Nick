@@ -1,7 +1,19 @@
 package com.revature.pojo;
 
+import javax.annotation.Resource;
+import javax.inject.Inject;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Banana {
 	
+	@Autowired
+	@Qualifier("myPeel")
+	@Resource
+	@Inject
 	private Peel peel;
 	
 	private String name;
@@ -11,6 +23,7 @@ public class Banana {
 		// TODO Auto-generated constructor stub
 	}
 
+	//@Autowired
 	public Banana(Peel peel, String name) {
 		super();
 		this.peel = peel;
@@ -21,7 +34,8 @@ public class Banana {
 		return peel;
 	}
 
-	public void setApplePeel(Peel peel) {
+	//@Autowired
+	public void setPeel(Peel peel) {
 		this.peel = peel;
 	}
 

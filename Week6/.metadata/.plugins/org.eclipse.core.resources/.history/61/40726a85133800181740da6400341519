@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- 	<bean id="banana" class="com.revature.pojo.Banana" scope="prototype" autowire="byName">
+		<property name="peel" ref="apple-peel"></property>
+		<property name="name" value="myBanana"></property>
+	</bean>
+	<bean id="bananaPeel" class="com.revature.pojo.BananaPeel"></bean>
+	<bean id="applePeel" class="com.revature.pojo.ApplePeel"></bean>
+	<bean id="lifeCycleBean" class="com.revature.pojo.LifeCycleBean" scope="singleton"
+	init-method="customInit"
+	destroy-method="customDestroy"
+	/> -->
+
+</beans>
