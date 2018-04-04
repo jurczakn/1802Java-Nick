@@ -1,0 +1,17 @@
+package com.revature.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+
+@Controller
+public class LoginCtrl {
+	
+	public String login(ModelMap modelMap){
+		
+		System.out.println("logged in");
+		
+		return "forward:resources/home.html";
+		
+	}
+
+}

@@ -1,0 +1,41 @@
+function login(){
+	
+	var xhr = new XMLHttpRequest();
+	
+	xhr.onreadystatechange = function(){
+		
+		if(xhr.status === 200 && xhr.readystate === 4){
+			
+			var data = xhr.response;
+			
+			if(data === "success"){
+				
+				window.location.replace("home.html");
+				
+			}
+			
+			else{
+				
+				document.getElementById("result").innerHtml = data;
+				
+			}
+			
+		}
+		
+	}
+	
+	xhr.open("POST", "login");
+	
+	var user = document.getElementById("usr").value;
+	
+	var pass = document.getElementById("pwd").value;
+	
+	xhr.send(JSON.stringify({username: user, password: pass}))
+	
+}
+
+window.onload = function(){
+	
+	document.getElementById("btn").addEventListener("click", login, false);
+	
+}

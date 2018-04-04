@@ -1,0 +1,50 @@
+package com.revature.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.revature.domains.User;
+import com.revature.services.UserService;
+
+@Controller
+public class LoginCtrl {
+	
+	@Autowired
+	private UserService userService;
+	
+	@RequestMapping("/login")
+	public String login(ModelMap modelMap){
+		
+		System.out.println("logged in");
+		
+		//return "forward:resources/home.html";
+		return "login";
+		
+	}
+	
+	@RequestMapping(value="/oldLogin", method=RequestMethod.POST)
+	public String loginPost(User user, ModelMap modelMap){
+		
+		System.out.println(user.getUsername());
+		System.out.println(user.getPassword());
+		
+		if(userService.authenticateUser(user)){
+			
+			modelMap.addAttribute("user", user);
+			return "home";
+			
+		}
+		
+		else {
+			
+			modelMap.addAttribute("errorMessage", "Username/Passsword incorrect");
+			return "login";
+			
+		}
+		
+	}
+
+}
