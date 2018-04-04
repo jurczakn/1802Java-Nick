@@ -14,14 +14,14 @@
 	<!-- Tell DispatcherServlet where are our Static Resources -->
 	<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
 	
-	<!-- Configure the View Resolver -->
-	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+ 	<!-- Configure the View Resolver -->
+<!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix">
 			<value>/WEB-INF/pages/</value>
 		</property>
 		<property name="suffix">
 			<value>.jsp</value>
 		</property>
-	</bean>
+	</bean> -->
 
 </beans>
