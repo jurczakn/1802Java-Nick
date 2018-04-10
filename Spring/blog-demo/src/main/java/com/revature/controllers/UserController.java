@@ -1,5 +1,7 @@
 package com.revature.controllers;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -35,6 +37,18 @@ public class UserController {
 		else {
 			return new ResponseEntity<User>(user, HttpStatus.CREATED);
 		}
+	}
+	
+	@RequestMapping(value="/users", method=RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<User>> getAllUsers(){
+		List<User> users = service.getAllUsers();
+		if(users==null) {
+			 return new ResponseEntity<List<User>>(HttpStatus.NO_CONTENT);
+		}
+		else {
+			return new ResponseEntity<List<User>>(users, HttpStatus.OK);
+		}
+		
 	}
 	
 }
