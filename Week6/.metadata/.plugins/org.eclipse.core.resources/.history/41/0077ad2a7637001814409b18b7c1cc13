@@ -1,9 +1,0 @@
-package com.revature.pojo;
-
-public class Banana {
-	
-	private Peel peel;
-	
-	private String name;
-
-}

@@ -1,0 +1,4 @@
+#Zuul Configuration
+spring.application.name=zuul
+server.port=10000
+

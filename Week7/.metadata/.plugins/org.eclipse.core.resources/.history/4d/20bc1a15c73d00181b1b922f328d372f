@@ -1,0 +1,6 @@
+#Zuul Configuration
+spring.application.name=zuul
+server.port=10000
+
+#Local Routes
+zuul.routes.hello.url=http://:10001

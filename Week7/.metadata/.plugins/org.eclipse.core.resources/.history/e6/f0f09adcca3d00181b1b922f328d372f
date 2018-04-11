@@ -1,0 +1,6 @@
+#Service config
+spring.application.name=goodbye
+server.port=10002
+
+#Discovery Configuration
+eureka.client.service-url.defaultZone=localhost:8761

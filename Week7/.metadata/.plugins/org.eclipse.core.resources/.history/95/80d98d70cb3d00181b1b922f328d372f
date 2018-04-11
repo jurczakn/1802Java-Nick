@@ -1,0 +1,11 @@
+#Zuul Configuration
+spring.application.name=zuul
+server.port=10000
+
+#Local Routes
+#zuul.routes.hello.url=http://localhost:10001
+#zuul.routes.goodbye.url=http://localhost:10002
+
+#Enable Full Discovery Routes Through Eureka
+zuul.routes.hello.path=/hello/**
+zuul.routes.hello.serviceId=hello

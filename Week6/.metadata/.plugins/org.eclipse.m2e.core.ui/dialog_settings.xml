@@ -7,6 +7,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="AOPExample"/>
+			<item value="SpringMVCExample"/>
 			<item value="SpringBeans"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -45,6 +47,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Revature\repos\1802Java-Nick\Week6\SpringBeans\pom.xml"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
