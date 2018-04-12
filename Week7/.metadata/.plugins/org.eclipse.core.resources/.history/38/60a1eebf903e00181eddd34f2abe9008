@@ -1,0 +1,27 @@
+package com.revature.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
+
+@RestController
+public class ConsumerCtrl {
+	
+	public static int count = 0;
+	
+	@GetMapping("/")
+	@HystrixCommand(fallbackMethod="myFallback")
+	public String doGet(){
+		
+		if (count++>5){
+			
+			throw new RuntimeException();
+			
+		}
+		
+		return "ok";
+		
+	}
+
+}

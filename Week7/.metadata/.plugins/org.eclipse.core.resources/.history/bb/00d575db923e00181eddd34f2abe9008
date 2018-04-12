@@ -1,0 +1,12 @@
+package com.revature;
+
+import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@FeignClient("helloservice")
+public interface HelloClient {
+	
+	@GetMapping("/")
+	public String getHelloMessage();
+
+}

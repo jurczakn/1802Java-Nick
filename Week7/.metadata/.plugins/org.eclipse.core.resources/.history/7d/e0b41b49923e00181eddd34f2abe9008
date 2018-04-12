@@ -1,0 +1,8 @@
+package com.revature;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name="helloservice", url="http://localhost:10000/hello")
+public interface HelloClient {
+
+}
