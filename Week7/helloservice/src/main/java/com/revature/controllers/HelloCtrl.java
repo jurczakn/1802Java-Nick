@@ -1,15 +1,33 @@
 package com.revature.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.revature.messaging.Sender;
+
+
 @RestController
 public class HelloCtrl {
+	
+	private static final String HELLO_TOPIC = "helloworld.t";
+	
+	@Autowired
+	Sender sender;
 	
 	@RequestMapping("/")
 	public String hello(){
 		
 		return "hello world";
+		
+	}
+	
+	@RequestMapping("/sendmessage")
+	public String sendMessage(){
+		
+		sender.send(HELLO_TOPIC, "hello world from Spring to Kafka");
+		
+		return "success!";
 		
 	}
 

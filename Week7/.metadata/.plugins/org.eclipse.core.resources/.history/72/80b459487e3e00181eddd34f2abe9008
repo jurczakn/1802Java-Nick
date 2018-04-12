@@ -1,0 +1,9 @@
+package com.revature.messaging;
+
+import org.springframework.kafka.annotation.KafkaListener;
+
+public class Reciever {
+	
+	@KafkaListener(topics = "${spring.topic.helloworld}")
+
+}

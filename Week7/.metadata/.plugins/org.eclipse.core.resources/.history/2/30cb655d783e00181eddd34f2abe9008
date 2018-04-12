@@ -1,0 +1,10 @@
+#Service Config
+spring.application.name = hello
+server.port = 10001
+
+#Discovery Configuration
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka
+
+#Kafka properites
+spring.kafka.bootstrap-servers=localhost:9092
+kafka.topic.helloworld=helloworld.t

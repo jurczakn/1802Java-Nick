@@ -1,0 +1,5 @@
+package com.revature.messaging;
+
+public class Reciever {
+
+}
